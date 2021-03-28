@@ -6,9 +6,9 @@ Section #34780
 
 <resources>
     <string name="app_name">ConnorMurray991553779</string>
-    <string name="title_home">Connor</string>
-    <string name="title_dashboard">Murray</string>
-    <string name="title_notifications">S991553779</string>
+    <string name="title_frag1">Connor</string>
+    <string name="title_frag2">Murray</string>
+    <string name="title_frag3">S991553779</string>
 
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="connor_murray_991553779">Connor Murray 991553779</string>

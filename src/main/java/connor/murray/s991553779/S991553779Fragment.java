@@ -18,14 +18,15 @@ import android.view.ViewGroup;
 public class S991553779Fragment extends Fragment {
 
 
-    public static S991553779Fragment newInstance() {
-        return new S991553779Fragment();
-    }
-
     @Override
-    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
-                             @Nullable Bundle savedInstanceState) {
+    public View onCreateView(
+            LayoutInflater inflater, ViewGroup container,
+            Bundle savedInstanceState
+    ) {
+        // Inflate the layout for this fragment
         return inflater.inflate(R.layout.s991553779_fragment, container, false);
     }
+
+
 
 }

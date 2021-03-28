@@ -4,16 +4,10 @@ Connor Murray
 Student ID: 991553779
 Section #34780
 -->
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".S991553779Fragment">
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="#1FD8A5"
-        android:text="Hello" />
-
-</FrameLayout>
+    android:background="#10DC95"
+    tools:context=".S991553779Fragment" />

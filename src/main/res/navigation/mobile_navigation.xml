@@ -21,8 +21,9 @@ Section #34780
         android:label="murray_fragment"
         tools:layout="@layout/murray_fragment" />
     <fragment
-        android:id="@+id/s991553779Fragment"
+        android:id="@+id/S991553779Fragment"
         android:name="connor.murray.s991553779.S991553779Fragment"
         android:label="s991553779_fragment"
         tools:layout="@layout/s991553779_fragment" />
+
 </navigation>

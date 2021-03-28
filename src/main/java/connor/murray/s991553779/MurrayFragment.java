@@ -5,8 +5,6 @@ Section #34780
  */
 package connor.murray.s991553779;
 
-import androidx.lifecycle.ViewModelProvider;
-
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -19,9 +17,6 @@ import android.view.ViewGroup;
 
 public class MurrayFragment extends Fragment {
 
-    public static MurrayFragment newInstance() {
-        return new MurrayFragment();
-    }
 
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
