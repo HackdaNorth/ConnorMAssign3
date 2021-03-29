@@ -12,4 +12,7 @@ Section #34780
 
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="connor_murray_991553779">Connor Murray 991553779</string>
+    <string name="connorimagedesc">connorImageDesc</string>
+    <string name="clear_canvas">Clear Canvas</string>
+
 </resources>

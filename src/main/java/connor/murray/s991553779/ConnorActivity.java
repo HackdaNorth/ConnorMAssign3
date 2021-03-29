@@ -7,22 +7,31 @@ package connor.murray.s991553779;
 
 import android.content.Context;
 import android.content.DialogInterface;
+import android.graphics.Canvas;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
+import androidx.navigation.fragment.NavHostFragment;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
 public class ConnorActivity extends AppCompatActivity {
 
+    private CanvasVIew customCanvas;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.activity_connor);
         BottomNavigationView navView = findViewById(R.id.connorNav_view);
         // Passing each menu ID as a set of Ids because each
@@ -34,7 +43,13 @@ public class ConnorActivity extends AppCompatActivity {
         NavController navController = Navigation.findNavController(this,R.id.connorNav_host_fragment);
         NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
         NavigationUI.setupWithNavController(navView, navController);
+
+        customCanvas = (CanvasVIew) findViewById(R.id.connorCanvas);
+
+
+
     }
+
     @Override
     public void onBackPressed() {
         exitAlert(ConnorActivity.this);

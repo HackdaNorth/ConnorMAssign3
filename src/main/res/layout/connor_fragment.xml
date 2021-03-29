@@ -5,8 +5,35 @@ Student ID: 991553779
 Section #34780
 -->
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#C82A2A"
-    tools:context=".ConnorFragment" />
+    tools:context=".ConnorFragment" >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/connorImageView"
+            android:layout_width="273dp"
+            android:layout_height="249dp"
+            android:layout_marginStart="68dp"
+            android:layout_marginTop="80dp"
+            android:contentDescription="@string/connorimagedesc"
+            android:src="@drawable/avatar"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <connor.murray.s991553779.CanvasVIew
+            android:id="@+id/connorCanvas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
