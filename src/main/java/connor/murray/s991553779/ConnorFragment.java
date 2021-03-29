@@ -34,12 +34,7 @@ public class ConnorFragment extends Fragment {
         // Inflate the layout for this fragment
         // customCanvas = (CanvasVIew) findViewById(R.id.connorCanvas);
 
-        connorClear.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                customCanvas.clear();
-            }
-        });
+
         return inflater.inflate(R.layout.connor_fragment, container, false);
     }
 

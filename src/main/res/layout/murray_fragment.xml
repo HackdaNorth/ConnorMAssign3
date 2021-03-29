@@ -12,4 +12,9 @@ Section #34780
     android:background="#7FBA21"
     tools:context=".MurrayFragment">
 
+    <Button
+        android:id="@+id/connorCamera"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/open_camera" />
 </FrameLayout>

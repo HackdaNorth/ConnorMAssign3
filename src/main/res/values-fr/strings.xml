@@ -16,4 +16,5 @@ Section #34780
     <string name="connorimagedesc">connorImageDesc</string>
     <string name="clearCanvas">Clear Canvas</string>
     <string name="clear_canvas">Clear Canvas</string>
+    <string name="open_camera">Open Camera</string>
 </resources>

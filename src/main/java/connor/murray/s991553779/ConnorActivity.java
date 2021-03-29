@@ -5,18 +5,25 @@ Section #34780
  */
 package connor.murray.s991553779;
 
+import android.Manifest;
 import android.content.Context;
 import android.content.DialogInterface;
+import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.graphics.Canvas;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.fragment.NavHostFragment;
@@ -25,6 +32,7 @@ import androidx.navigation.ui.NavigationUI;
 
 public class ConnorActivity extends AppCompatActivity {
 
+    private static final int PERMISSION_REQUEST_CODE = 0;
     private CanvasVIew customCanvas;
 
 
@@ -48,8 +56,10 @@ public class ConnorActivity extends AppCompatActivity {
 
 
 
+
     }
 
+    //back button intercept
     @Override
     public void onBackPressed() {
         exitAlert(ConnorActivity.this);
@@ -70,6 +80,5 @@ public class ConnorActivity extends AppCompatActivity {
                 .setNegativeButton("No", null)
                 .show();
     }
-
 
 }
