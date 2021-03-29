@@ -5,10 +5,13 @@ Section #34780
  */
 package connor.murray.s991553779;
 
+import android.content.Context;
+import android.content.DialogInterface;
 import android.os.Bundle;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
@@ -31,6 +34,26 @@ public class ConnorActivity extends AppCompatActivity {
         NavController navController = Navigation.findNavController(this,R.id.connorNav_host_fragment);
         NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
         NavigationUI.setupWithNavController(navView, navController);
+    }
+    @Override
+    public void onBackPressed() {
+        exitAlert(ConnorActivity.this);
+    }
+
+    //back button intercept alert dialog
+    public void exitAlert(Context mContext) {
+        new AlertDialog.Builder(mContext)
+                .setIcon(R.mipmap.ic_launcher)
+                .setTitle("Exit - Connor Murray 991553779")
+                .setMessage("Do you wish to exit?")
+                .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        System.exit(0);
+                    }
+                })
+                .setNegativeButton("No", null)
+                .show();
     }
 
 
